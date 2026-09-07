@@ -1,0 +1,1 @@
+import{i as a,n as e}from"./src-D-xocrDr.js";var o=null;function l(t,n){return t!==null&&t.httpClient===n.httpClient&&t.eventBus===n.eventBus}function r(t){if(!l(o,t)){o=t;for(const n of e)a(n.id).bootstrap?.(t)}}export{r as bootstrapInstalledGames};
