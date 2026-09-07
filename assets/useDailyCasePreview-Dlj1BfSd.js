@@ -1,0 +1,1 @@
+import{t as r}from"./useQuery-BlmcHkK0.js";import{n as a}from"./dailyCaseApi-CP-s3B8M.js";var t=["daily-case","state"];function i({enabled:e=!0}={}){return r({queryKey:t,queryFn:a,enabled:e,staleTime:3e4,retry:!1,refetchOnWindowFocus:!1,throwOnError:!1})}export{i as n,t};

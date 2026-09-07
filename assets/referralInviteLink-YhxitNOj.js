@@ -1,0 +1,1 @@
+import{n as e,t as n}from"./telegramMiniAppLinks-YJlUuXm6.js";function t(){return"EDGE_GIFT_BOT"}function a(){return"ref"}function o(r){return n({botUsername:t(),appShortName:a(),startParam:r,mode:e(void 0,"direct")})}export{o as t};

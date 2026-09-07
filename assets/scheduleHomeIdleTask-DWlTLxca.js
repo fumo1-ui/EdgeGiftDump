@@ -1,0 +1,1 @@
+function o(e,l=1600){if(typeof window>"u")return()=>{};if("requestIdleCallback"in window&&"cancelIdleCallback"in window){const n=window,d=n.requestIdleCallback(e,{timeout:l});return()=>n.cancelIdleCallback(d)}const i=globalThis.setTimeout(e,l);return()=>globalThis.clearTimeout(i)}export{o as t};
