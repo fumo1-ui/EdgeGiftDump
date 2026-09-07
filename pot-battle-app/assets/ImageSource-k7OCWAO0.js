@@ -1,0 +1,2 @@
+import{w as e,z as t}from"./Geometry-LRB-eiML.js";var n=class extends e{constructor(e){super(e),this.uploadMethodId=`image`,this.autoGarbageCollect=!0}static test(e){return globalThis.HTMLImageElement&&e instanceof HTMLImageElement||typeof ImageBitmap<`u`&&e instanceof ImageBitmap||globalThis.VideoFrame&&e instanceof VideoFrame}};n.extension=t.TextureSource;export{n as t};
+//# sourceMappingURL=ImageSource-k7OCWAO0.js.map

@@ -1,0 +1,72 @@
+<!doctype html>
+<html lang="en">
+  <head>
+<script>
+  window.Telegram = {
+    WebApp: {
+      initData: "query_id=AAHdF6IQAAAAAN0XohBCx1Xv&user=%7B%22id%22%3A123456789%2C%22first_name%22%3A%22Player%22%2C%22last_name%22%3A%221%22%2C%22username%22%3A%22player1%22%2C%22language_code%22%3A%22en%22%2C%22allows_write_to_pm%22%3Atrue%7D&auth_date=1726000000&hash=abcdef0123456789abcdef0123456789abcdef0123456789abcdef0123456789",
+      initDataUnsafe: {
+        query_id: "AAHdF6IQAAAAAN0XohBCx1Xv",
+        user: {
+          id: 123456789,
+          first_name: "Player",
+          last_name: "1",
+          username: "player1",
+          language_code: "en",
+          allows_write_to_pm: true
+        },
+        auth_date: "1726000000",
+        hash: "abcdef0123456789abcdef0123456789abcdef0123456789abcdef0123456789"
+      },
+      version: "8.0",
+      platform: "tdesktop",
+      colorScheme: "dark",
+      themeParams: {
+        bg_color: "#18222d",
+        text_color: "#ffffff",
+        hint_color: "#708499",
+        link_color: "#6ab3f3",
+        button_color: "#5288c1",
+        button_text_color: "#ffffff",
+        secondary_bg_color: "#131415"
+      },
+      isExpanded: true,
+      viewportHeight: window.innerHeight,
+      viewportStableHeight: window.innerHeight,
+      headerColor: "#131415",
+      backgroundColor: "#131415",
+      BackButton: { isVisible: false, show() {}, hide() {}, onClick() {}, offClick() {} },
+      MainButton: { isVisible: false, text: "", show() {}, hide() {}, enable() {}, disable() {}, onClick() {}, offClick() {}, showProgress() {}, hideProgress() {} },
+      HapticFeedback: { impactOccurred() {}, notificationOccurred() {}, selectionChanged() {} },
+      ready() { console.log("[TG Mock] WebApp.ready() called"); },
+      expand() { console.log("[TG Mock] WebApp.expand() called"); },
+      close() { console.log("[TG Mock] WebApp.close() called"); },
+      setHeaderColor() {},
+      setBackgroundColor() {},
+      enableClosingConfirmation() {},
+      disableClosingConfirmation() {},
+      onEvent(e, cb) { window.addEventListener("tg_" + e, cb); },
+      offEvent(e, cb) { window.removeEventListener("tg_" + e, cb); },
+      sendData(data) { console.log("[TG Mock] sendData", data); },
+      openLink(url) { window.open(url, "_blank"); },
+      openTelegramLink(url) { window.open(url, "_blank"); }
+    }
+  };
+</script>
+
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover"
+    />
+    <meta name="theme-color" content="#070707" />
+    <title>PVP Bombs</title>
+    
+    <script type="module" crossorigin src="/pvp-bombs-app/assets/index-DmeuWuAR.js"></script>
+    <link rel="stylesheet" crossorigin href="/pvp-bombs-app/assets/index-De8KiIoi.css">
+  </head>
+  <body>
+    <div id="root"></div>
+  
+</body>
+</html>

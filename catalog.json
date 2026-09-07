@@ -1,0 +1,815 @@
+{
+  "success": true,
+  "games": [
+    {
+      "manifestVersion": 1,
+      "id": "pvp-bombs",
+      "route": "/pvp-bombs",
+      "gameKey": "pvp-bombs",
+      "frontendPackageName": "@edgegift/pvp-bombs-frontend",
+      "backendPackageName": "@edge-rolls/game-pvp-bombs",
+      "backendModuleName": "game-pvp-bombs",
+      "adminSurfaceVersion": 1,
+      "kind": "multiplayer",
+      "settlementModel": "pvp",
+      "supportedCurrencies": [
+        "gold",
+        "silver"
+      ],
+      "capabilities": [
+        "history",
+        "xp",
+        "leaderboard"
+      ],
+      "shellCapabilities": [],
+      "displayName": "PvP Bombs",
+      "catalogOrder": 2,
+      "chrome": {
+        "hideFooter": false,
+        "transitionVariant": "vertical",
+        "activityRail": {
+          "enabled": false,
+          "mode": "reserved"
+        }
+      },
+      "homeTile": {
+        "titleKey": "games.pvp-bombs",
+        "visual": {
+          "kind": "banner",
+          "assets": {
+            "image": "/game-tiles/pvp-bombs-banner.svg"
+          },
+          "alt": ""
+        },
+        "animation": null,
+        "badges": {
+          "online": true,
+          "boosts": false
+        },
+        "layout": {
+          "variant": "beveled-160",
+          "assetPosition": "right-banner"
+        }
+      },
+      "enabled": true,
+      "visibleOnHome": true,
+      "sortOrder": 2,
+      "showWhenUnavailable": false,
+      "maintenanceMode": false,
+      "maintenanceMessage": null,
+      "available": true,
+      "availabilityStatus": "available",
+      "updatedAt": null
+    },
+    {
+      "manifestVersion": 1,
+      "id": "pot-battle",
+      "route": "/pot-battle",
+      "gameKey": "pot-battle",
+      "frontendPackageName": "@edgegift/pot-battle-frontend",
+      "backendPackageName": "@edge-rolls/game-pot-battle",
+      "backendModuleName": "game-pot-battle",
+      "adminSurfaceVersion": 1,
+      "kind": "multiplayer",
+      "settlementModel": "pvp",
+      "supportedCurrencies": [
+        "gold",
+        "silver"
+      ],
+      "capabilities": [
+        "history",
+        "xp",
+        "leaderboard"
+      ],
+      "shellCapabilities": [],
+      "displayName": "Bump Arena",
+      "catalogOrder": 1,
+      "chrome": {
+        "hideFooter": false,
+        "transitionVariant": "vertical",
+        "activityRail": {
+          "enabled": false,
+          "mode": "reserved"
+        }
+      },
+      "homeTile": {
+        "titleKey": "games.pot-battle",
+        "visual": {
+          "kind": "banner",
+          "assets": {
+            "image": "/game-tiles/pot-battle-banner.svg"
+          },
+          "alt": ""
+        },
+        "animation": null,
+        "badges": {
+          "online": true,
+          "boosts": false
+        },
+        "layout": {
+          "variant": "beveled-160",
+          "assetPosition": "right-banner"
+        }
+      },
+      "enabled": true,
+      "visibleOnHome": true,
+      "sortOrder": 1,
+      "showWhenUnavailable": false,
+      "maintenanceMode": false,
+      "maintenanceMessage": null,
+      "available": true,
+      "availabilityStatus": "available",
+      "updatedAt": null
+    },
+    {
+      "manifestVersion": 1,
+      "id": "edge-ice",
+      "route": "/edge-ice",
+      "gameKey": "edge-ice",
+      "frontendPackageName": "@edgegift/edge-ice-frontend",
+      "backendPackageName": "@edge-rolls/game-edge-ice",
+      "backendModuleName": "game-edge-ice",
+      "adminSurfaceVersion": 1,
+      "kind": "multiplayer",
+      "settlementModel": "pvp",
+      "supportedCurrencies": [
+        "gold",
+        "silver"
+      ],
+      "capabilities": [
+        "history",
+        "xp",
+        "leaderboard"
+      ],
+      "shellCapabilities": [],
+      "displayName": "Edge Ice",
+      "catalogOrder": 7,
+      "chrome": {
+        "hideFooter": false,
+        "transitionVariant": "vertical",
+        "activityRail": {
+          "enabled": false,
+          "mode": "reserved"
+        }
+      },
+      "homeTile": {
+        "titleKey": "games.edge-ice",
+        "visual": {
+          "kind": "banner",
+          "assets": {
+            "image": "/game-tiles/pot-battle-banner.svg"
+          },
+          "alt": ""
+        },
+        "animation": null,
+        "badges": {
+          "online": true,
+          "boosts": false
+        },
+        "layout": {
+          "variant": "beveled-160",
+          "assetPosition": "right-banner"
+        }
+      },
+      "enabled": true,
+      "visibleOnHome": true,
+      "sortOrder": 7,
+      "showWhenUnavailable": false,
+      "maintenanceMode": false,
+      "maintenanceMessage": null,
+      "available": true,
+      "availabilityStatus": "available",
+      "updatedAt": null
+    },
+    {
+      "manifestVersion": 1,
+      "id": "upgrade",
+      "route": "/upgrade",
+      "gameKey": "upgrade",
+      "frontendPackageName": "@edgegift/upgrade-frontend",
+      "backendPackageName": "@edgegift/upgrade-backend",
+      "backendModuleName": null,
+      "adminSurfaceVersion": 1,
+      "kind": "async-swap",
+      "settlementModel": "single_player",
+      "supportedCurrencies": [
+        "gold",
+        "silver"
+      ],
+      "capabilities": [
+        "xp",
+        "history",
+        "leaderboard",
+        "recent-wins"
+      ],
+      "shellCapabilities": [
+        "optimistic-balance"
+      ],
+      "displayName": "Upgrade",
+      "catalogOrder": 3,
+      "chrome": {
+        "hideFooter": false,
+        "transitionVariant": "vertical",
+        "activityRail": {
+          "enabled": true,
+          "mode": "reserved"
+        }
+      },
+      "homeTile": {
+        "titleKey": "games.upgrade",
+        "visual": {
+          "kind": "upgrade-wheel",
+          "assets": {
+            "cardTop": "/upgrade-preview/CardUpgrades2.svg",
+            "cardBottom": "/upgrade-preview/CardUpgrades1.svg",
+            "occlusion": "/upgrade-preview/Eclipse.svg",
+            "circle": "/upgrade-preview/UpgradeCircleMain.svg",
+            "line": "/upgrade-preview/UpgradeLineMain.svg"
+          },
+          "alt": ""
+        },
+        "animation": {
+          "participantId": "upgrade",
+          "syncGroup": "home-mode-tile-animations",
+          "reducedMotion": "static-final-frame"
+        },
+        "badges": {
+          "online": true,
+          "boosts": true
+        },
+        "layout": {
+          "variant": "beveled-160",
+          "assetPosition": "right-upgrade"
+        }
+      },
+      "enabled": true,
+      "visibleOnHome": true,
+      "sortOrder": 3,
+      "showWhenUnavailable": false,
+      "maintenanceMode": false,
+      "maintenanceMessage": null,
+      "available": true,
+      "availabilityStatus": "available",
+      "updatedAt": null
+    },
+    {
+      "manifestVersion": 1,
+      "id": "mines",
+      "route": "/mines",
+      "gameKey": "mines",
+      "frontendPackageName": "@edgegift/mines-frontend",
+      "backendPackageName": "@edgegift/mines-backend",
+      "backendModuleName": "mines-backend",
+      "adminSurfaceVersion": 1,
+      "kind": "single-round",
+      "settlementModel": "single_player",
+      "supportedCurrencies": [
+        "gold",
+        "silver"
+      ],
+      "capabilities": [
+        "xp",
+        "history",
+        "leaderboard"
+      ],
+      "shellCapabilities": [],
+      "displayName": "Bombs",
+      "catalogOrder": 0,
+      "chrome": {
+        "hideFooter": false,
+        "transitionVariant": "vertical",
+        "activityRail": {
+          "enabled": false,
+          "mode": "reserved"
+        }
+      },
+      "homeTile": {
+        "titleKey": "games.mines",
+        "visual": {
+          "kind": "mines-bomb",
+          "assets": {
+            "pattern": "/mines/mines_card_part.svg",
+            "bomb": "/mines/bomb.svg"
+          },
+          "alt": ""
+        },
+        "animation": {
+          "participantId": "mines",
+          "syncGroup": "home-mode-tile-animations",
+          "reducedMotion": "static-final-frame"
+        },
+        "badges": {
+          "online": true,
+          "boosts": true
+        },
+        "layout": {
+          "variant": "beveled-160",
+          "assetPosition": "right-pattern"
+        }
+      },
+      "enabled": true,
+      "visibleOnHome": true,
+      "sortOrder": 0,
+      "showWhenUnavailable": false,
+      "maintenanceMode": false,
+      "maintenanceMessage": null,
+      "available": true,
+      "availabilityStatus": "available",
+      "updatedAt": null
+    },
+    {
+      "manifestVersion": 1,
+      "id": "rocket",
+      "route": "/rocket",
+      "gameKey": "rocket",
+      "frontendPackageName": "@edgegift/rocket-frontend",
+      "backendPackageName": null,
+      "backendModuleName": null,
+      "adminSurfaceVersion": 1,
+      "kind": "streaming",
+      "settlementModel": "worker_async",
+      "supportedCurrencies": [
+        "gold",
+        "silver"
+      ],
+      "capabilities": [
+        "xp",
+        "history",
+        "leaderboard",
+        "recent-wins"
+      ],
+      "shellCapabilities": [],
+      "displayName": "Rocket",
+      "catalogOrder": 5,
+      "chrome": {
+        "hideFooter": false,
+        "transitionVariant": "vertical",
+        "activityRail": {
+          "enabled": false,
+          "mode": "reserved"
+        }
+      },
+      "homeTile": {
+        "titleKey": "games.rocket",
+        "visual": {
+          "kind": "rocket-lottie",
+          "assets": {
+            "image": "/game-tiles/rocket-final-frame.png"
+          },
+          "alt": ""
+        },
+        "animation": {
+          "participantId": "rocket",
+          "syncGroup": "home-mode-tile-animations",
+          "reducedMotion": "static-final-frame"
+        },
+        "badges": {
+          "online": true,
+          "boosts": true
+        },
+        "layout": {
+          "variant": "beveled-160",
+          "assetPosition": "right-rocket"
+        }
+      },
+      "enabled": true,
+      "visibleOnHome": true,
+      "sortOrder": 5,
+      "showWhenUnavailable": false,
+      "maintenanceMode": false,
+      "maintenanceMessage": null,
+      "available": true,
+      "availabilityStatus": "available",
+      "updatedAt": null
+    },
+    {
+      "manifestVersion": 1,
+      "id": "roulette",
+      "route": "/roulette",
+      "gameKey": "roulette",
+      "frontendPackageName": "@edgegift/roulette-frontend",
+      "backendPackageName": "@kazi4kk/user-api",
+      "backendModuleName": "user-api",
+      "adminSurfaceVersion": 1,
+      "kind": "single-round",
+      "settlementModel": "single_player",
+      "supportedCurrencies": [
+        "gold",
+        "silver"
+      ],
+      "capabilities": [
+        "xp",
+        "history",
+        "leaderboard",
+        "recent-wins"
+      ],
+      "shellCapabilities": [],
+      "displayName": "RTP v2 Roulette",
+      "catalogOrder": 6,
+      "chrome": {
+        "hideFooter": false,
+        "transitionVariant": "vertical-strong",
+        "activityRail": {
+          "enabled": true,
+          "mode": "reserved"
+        }
+      },
+      "homeTile": {
+        "titleKey": "games.roulette",
+        "visual": {
+          "kind": "roulette-wheel",
+          "assets": {
+            "wheel": "/Wheel.svg"
+          },
+          "alt": ""
+        },
+        "animation": {
+          "participantId": "roulette",
+          "syncGroup": "home-mode-tile-animations",
+          "reducedMotion": "static-final-frame"
+        },
+        "badges": {
+          "online": true,
+          "boosts": true
+        },
+        "layout": {
+          "variant": "beveled-160",
+          "assetPosition": "right-wheel"
+        }
+      },
+      "enabled": true,
+      "visibleOnHome": true,
+      "sortOrder": 6,
+      "showWhenUnavailable": false,
+      "maintenanceMode": false,
+      "maintenanceMessage": null,
+      "available": true,
+      "availabilityStatus": "available",
+      "updatedAt": null
+    },
+    {
+      "manifestVersion": 1,
+      "id": "falling-pickaxe",
+      "route": "/falling-pickaxe",
+      "gameKey": "falling-pickaxe",
+      "frontendPackageName": "@edgegift/falling-pickaxe-frontend",
+      "backendPackageName": "@kazi4kk/game-falling-pickaxe",
+      "backendModuleName": "game-falling-pickaxe",
+      "adminSurfaceVersion": 1,
+      "kind": "single-round",
+      "settlementModel": "single_player",
+      "supportedCurrencies": [
+        "gold",
+        "silver"
+      ],
+      "capabilities": [
+        "history"
+      ],
+      "shellCapabilities": [
+        "optimistic-balance",
+        "toast"
+      ],
+      "displayName": "Falling Pickaxe",
+      "catalogOrder": 9,
+      "chrome": {
+        "hideFooter": false,
+        "transitionVariant": "vertical",
+        "activityRail": {
+          "enabled": true,
+          "mode": "reserved"
+        }
+      },
+      "homeTile": {
+        "titleKey": "games.falling-pickaxe",
+        "visual": {
+          "kind": "banner",
+          "assets": {
+            "image": "/game-tiles/falling-pickaxe-banner.svg"
+          },
+          "alt": ""
+        },
+        "animation": null,
+        "badges": {
+          "online": true,
+          "boosts": false
+        },
+        "layout": {
+          "variant": "beveled-160",
+          "assetPosition": "right-banner"
+        }
+      },
+      "enabled": true,
+      "visibleOnHome": true,
+      "sortOrder": 9,
+      "showWhenUnavailable": false,
+      "maintenanceMode": false,
+      "maintenanceMessage": null,
+      "available": true,
+      "availabilityStatus": "available",
+      "updatedAt": null
+    },
+    {
+      "manifestVersion": 1,
+      "id": "minedrop",
+      "route": "/minedrop",
+      "gameKey": "minedrop",
+      "frontendPackageName": "@edgegift/minedrop-frontend",
+      "backendPackageName": "@kazi4kk/game-minedrop",
+      "backendModuleName": "game-minedrop",
+      "adminSurfaceVersion": 1,
+      "kind": "single-round",
+      "settlementModel": "single_player",
+      "supportedCurrencies": [
+        "gold",
+        "silver"
+      ],
+      "capabilities": [
+        "history"
+      ],
+      "shellCapabilities": [
+        "optimistic-balance",
+        "toast"
+      ],
+      "displayName": "MineDrop",
+      "catalogOrder": 10,
+      "chrome": {
+        "hideFooter": false,
+        "transitionVariant": "vertical",
+        "activityRail": {
+          "enabled": true,
+          "mode": "reserved"
+        }
+      },
+      "homeTile": {
+        "titleKey": "games.minedrop",
+        "visual": {
+          "kind": "banner",
+          "assets": {
+            "image": "/game-tiles/falling-pickaxe-banner.svg"
+          },
+          "alt": ""
+        },
+        "animation": null,
+        "badges": {
+          "online": true,
+          "boosts": false
+        },
+        "layout": {
+          "variant": "beveled-160",
+          "assetPosition": "right-banner"
+        }
+      },
+      "enabled": true,
+      "visibleOnHome": true,
+      "sortOrder": 10,
+      "showWhenUnavailable": false,
+      "maintenanceMode": false,
+      "maintenanceMessage": null,
+      "available": true,
+      "availabilityStatus": "available",
+      "updatedAt": null
+    },
+    {
+      "manifestVersion": 1,
+      "id": "stack-drop",
+      "route": "/stack-drop",
+      "gameKey": "stack-drop",
+      "frontendPackageName": "@edgegift/stack-drop-frontend",
+      "backendPackageName": "@kazi4kk/game-stack-drop",
+      "backendModuleName": "game-stack-drop",
+      "adminSurfaceVersion": 1,
+      "kind": "single-round",
+      "settlementModel": "single_player",
+      "supportedCurrencies": [
+        "gold",
+        "silver"
+      ],
+      "capabilities": [
+        "history"
+      ],
+      "shellCapabilities": [
+        "optimistic-balance",
+        "toast"
+      ],
+      "displayName": "Stack Drop",
+      "catalogOrder": 12,
+      "chrome": {
+        "hideFooter": false,
+        "transitionVariant": "vertical",
+        "activityRail": {
+          "enabled": true,
+          "mode": "reserved"
+        }
+      },
+      "homeTile": {
+        "titleKey": "games.stackDrop",
+        "visual": {
+          "kind": "banner",
+          "assets": {
+            "image": "/game-tiles/falling-pickaxe-banner.svg"
+          },
+          "alt": ""
+        },
+        "animation": null,
+        "badges": {
+          "online": true,
+          "boosts": false
+        },
+        "layout": {
+          "variant": "beveled-160",
+          "assetPosition": "right-banner"
+        }
+      },
+      "enabled": true,
+      "visibleOnHome": true,
+      "sortOrder": 12,
+      "showWhenUnavailable": false,
+      "maintenanceMode": false,
+      "maintenanceMessage": null,
+      "available": true,
+      "availabilityStatus": "available",
+      "updatedAt": null
+    },
+    {
+      "manifestVersion": 1,
+      "id": "escape",
+      "route": "/escape",
+      "gameKey": "escape",
+      "frontendPackageName": "@edgegift/escape-frontend",
+      "backendPackageName": "@edgegift/escape-backend",
+      "backendModuleName": "escape-backend",
+      "adminSurfaceVersion": 1,
+      "kind": "streaming",
+      "settlementModel": "worker_async",
+      "supportedCurrencies": [
+        "gold"
+      ],
+      "capabilities": [
+        "xp",
+        "history",
+        "leaderboard"
+      ],
+      "shellCapabilities": [],
+      "displayName": "Escape",
+      "catalogOrder": 8,
+      "chrome": {
+        "hideFooter": false,
+        "transitionVariant": "vertical",
+        "activityRail": {
+          "enabled": false,
+          "mode": "reserved"
+        }
+      },
+      "homeTile": {
+        "titleKey": "games.escape",
+        "visual": {
+          "kind": "banner",
+          "assets": {
+            "image": "/game-tiles/escape-banner.svg"
+          },
+          "alt": ""
+        },
+        "animation": null,
+        "badges": {
+          "online": true,
+          "boosts": false
+        },
+        "layout": {
+          "variant": "beveled-160",
+          "assetPosition": "right-banner"
+        }
+      },
+      "enabled": true,
+      "visibleOnHome": true,
+      "sortOrder": 8,
+      "showWhenUnavailable": false,
+      "maintenanceMode": false,
+      "maintenanceMessage": null,
+      "available": true,
+      "availabilityStatus": "available",
+      "updatedAt": null
+    },
+    {
+      "manifestVersion": 1,
+      "id": "cases",
+      "route": "/cases",
+      "gameKey": "cases",
+      "frontendPackageName": "@edgegift/cases-frontend",
+      "backendPackageName": "@kazi4kk/game-cases",
+      "backendModuleName": "game-cases",
+      "adminSurfaceVersion": 1,
+      "kind": "single-round",
+      "settlementModel": "single_player",
+      "supportedCurrencies": [
+        "gold",
+        "silver"
+      ],
+      "capabilities": [
+        "history"
+      ],
+      "shellCapabilities": [
+        "optimistic-balance",
+        "toast"
+      ],
+      "displayName": "Cases",
+      "catalogOrder": 10,
+      "chrome": {
+        "hideFooter": false,
+        "transitionVariant": "vertical",
+        "activityRail": {
+          "enabled": false,
+          "mode": "reserved"
+        }
+      },
+      "homeTile": {
+        "titleKey": "games.cases",
+        "visual": {
+          "kind": "banner",
+          "assets": {
+            "image": "/game-tiles/cases-banner.svg"
+          },
+          "alt": ""
+        },
+        "animation": null,
+        "badges": {
+          "online": true,
+          "boosts": false
+        },
+        "layout": {
+          "variant": "beveled-160",
+          "assetPosition": "right-banner"
+        }
+      },
+      "enabled": true,
+      "visibleOnHome": true,
+      "sortOrder": 10,
+      "showWhenUnavailable": false,
+      "maintenanceMode": false,
+      "maintenanceMessage": null,
+      "available": true,
+      "availabilityStatus": "available",
+      "updatedAt": null
+    },
+    {
+      "manifestVersion": 1,
+      "id": "farm",
+      "route": "/farm",
+      "gameKey": "farm",
+      "frontendPackageName": "@edgegift/farm-app",
+      "backendPackageName": "@kazi4kk/user-api",
+      "backendModuleName": "user-api",
+      "adminSurfaceVersion": 1,
+      "kind": "single-round",
+      "settlementModel": "single_player",
+      "supportedCurrencies": [
+        "gold",
+        "silver"
+      ],
+      "capabilities": [
+        "xp",
+        "history",
+        "leaderboard"
+      ],
+      "shellCapabilities": [],
+      "displayName": "Farm",
+      "catalogOrder": 11,
+      "chrome": {
+        "hideFooter": false,
+        "transitionVariant": "vertical",
+        "activityRail": {
+          "enabled": false,
+          "mode": "reserved"
+        }
+      },
+      "homeTile": {
+        "titleKey": "games.farm",
+        "visual": {
+          "kind": "banner",
+          "assets": {
+            "image": "/game-tiles/farm-banner.svg"
+          },
+          "alt": ""
+        },
+        "animation": null,
+        "badges": {
+          "online": false,
+          "boosts": false
+        },
+        "layout": {
+          "variant": "beveled-160",
+          "assetPosition": "right-banner"
+        }
+      },
+      "enabled": true,
+      "visibleOnHome": true,
+      "sortOrder": 11,
+      "showWhenUnavailable": false,
+      "maintenanceMode": false,
+      "maintenanceMessage": null,
+      "available": true,
+      "availabilityStatus": "available",
+      "updatedAt": null
+    }
+  ],
+  "updatedAt": null
+}
