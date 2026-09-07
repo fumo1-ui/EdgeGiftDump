@@ -1,0 +1,1 @@
+var s=new WeakMap,i=null,n=()=>typeof window>"u"||typeof IntersectionObserver>"u"?null:i||(i=new IntersectionObserver(r=>{for(const t of r){const e=s.get(t.target);e&&e(t.isIntersecting)}},{root:null,rootMargin:"200px 0px",threshold:.1}),i),o=(r,t)=>{const e=n();return e?(s.set(r,t),e.observe(r),()=>{s.delete(r),e.unobserve(r)}):(t(!0),()=>{})};export{o as t};
