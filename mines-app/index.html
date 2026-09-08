@@ -1,0 +1,111 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <script>
+    (function() {
+      const mockUser = {
+        id: 123456789,
+        first_name: "Игрок",
+        last_name: "",
+        username: "player",
+        language_code: "ru",
+        is_premium: true,
+        allows_write_to_pm: true,
+        photo_url: "/favicon.ico"
+      };
+      const initDataStr = "query_id=AAHdF6IQAAAAAN0XohD9p2l_&user=" + encodeURIComponent(JSON.stringify(mockUser)) + "&auth_date=1725450000&hash=d123456789abcdef0123456789abcdef0123456789abcdef0123456789abcdef";
+      const emptyFn = function() {};
+      const webApp = {
+        initData: initDataStr,
+        initDataUnsafe: {
+          query_id: "AAHdF6IQAAAAAN0XohD9p2l_",
+          user: mockUser,
+          auth_date: "1725450000",
+          hash: "d123456789abcdef0123456789abcdef0123456789abcdef0123456789abcdef",
+          start_param: ""
+        },
+        version: "8.0",
+        platform: "weba",
+        colorScheme: "dark",
+        themeParams: {
+          bg_color: "#0d0e12",
+          text_color: "#ffffff",
+          hint_color: "#7e8396",
+          link_color: "#5b8cff",
+          button_color: "#5b8cff",
+          button_text_color: "#ffffff",
+          secondary_bg_color: "#161822"
+        },
+        isExpanded: true,
+        viewportHeight: window.innerHeight,
+        viewportStableHeight: window.innerHeight,
+        headerColor: "#0d0e12",
+        backgroundColor: "#0d0e12",
+        isClosingConfirmationEnabled: false,
+        BackButton: {
+          isVisible: false,
+          onClick: function(fn) { this._cb = fn; },
+          offClick: function() { this._cb = null; },
+          show: function() { this.isVisible = true; },
+          hide: function() { this.isVisible = false; }
+        },
+        MainButton: {
+          text: "",
+          color: "#5b8cff",
+          textColor: "#ffffff",
+          isVisible: false,
+          isActive: true,
+          isProgressVisible: false,
+          setText: function(t) { this.text = t; return this; },
+          onClick: function(fn) { this._cb = fn; },
+          offClick: function() { this._cb = null; },
+          show: function() { this.isVisible = true; return this; },
+          hide: function() { this.isVisible = false; return this; },
+          enable: function() { this.isActive = true; return this; },
+          disable: function() { this.isActive = false; return this; }
+        },
+        HapticFeedback: {
+          impactOccurred: emptyFn,
+          notificationOccurred: emptyFn,
+          selectionChanged: emptyFn
+        },
+        ready: emptyFn,
+        expand: emptyFn,
+        close: emptyFn,
+        enableClosingConfirmation: emptyFn,
+        disableClosingConfirmation: emptyFn,
+        onEvent: emptyFn,
+        offEvent: emptyFn,
+        sendData: emptyFn,
+        openLink: function(url) { window.open(url, "_blank"); },
+        openTelegramLink: function(url) { window.open(url, "_blank"); },
+        isVersionAtLeast: function(v) { return true; }
+      };
+      window.Telegram = { WebApp: webApp };
+      try {
+        sessionStorage.setItem("__telegram_init_data__", initDataStr);
+        localStorage.setItem("edge-dev-init-data", initDataStr);
+      } catch(e) {}
+    })();
+    </script>
+
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="edge-deploy-probe" content="full-pipeline-20260518-mines" />
+    <title>Mines Local Dev</title>
+    <link
+      rel="icon"
+      href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='8' fill='%23090909'/%3E%3Crect x='7' y='7' width='18' height='18' rx='4' fill='%23151515' stroke='%230099ff' stroke-width='3'/%3E%3Ccircle cx='16' cy='16' r='4' fill='%23a259ff'/%3E%3C/svg%3E"
+    />
+    <script type="module" crossorigin src="/mines-app/assets/index-tkp5V-AB.js"></script>
+    <link rel="modulepreload" crossorigin href="/mines-app/assets/rolldown-runtime-BYbx6iT9.js">
+    <link rel="modulepreload" crossorigin href="/mines-app/assets/dist-Ccpy4He2.js">
+    <link rel="modulepreload" crossorigin href="/mines-app/assets/jsx-runtime-BgMs7Gb-.js">
+    <link rel="modulepreload" crossorigin href="/mines-app/assets/dist-BAVAzF5K.js">
+    <link rel="stylesheet" crossorigin href="/mines-app/assets/index-CzvzlnK6.css">
+  </head>
+  <body>
+    <div id="root"></div>
+  
+</body>
+</html>
